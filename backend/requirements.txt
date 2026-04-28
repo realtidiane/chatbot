@@ -1,0 +1,24 @@
+# Souple plutôt que strict pour que pip choisisse des wheels précompilés
+# pour la version de Python utilisée (notamment 3.13 / 3.14).
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+httpx>=0.27.0
+python-dotenv>=1.0.1
+pydantic>=2.11.0
+pydantic[email]>=2.11.0
+slowapi>=0.1.9
+
+# --- Database (MySQL via async SQLAlchemy 2.x) ---
+sqlalchemy[asyncio]>=2.0.36
+aiomysql>=0.2.0
+# aiomysql needs PyMySQL as its protocol layer — pinning here keeps it
+# explicit even though aiomysql installs it transitively.
+pymysql>=1.1.1
+# Sync driver used only by SQLAlchemy when creating tables on startup.
+# (Optional but avoids surprises on first init.)
+
+# --- Auth ---
+# bcrypt directly — passlib 1.7.4 is unmaintained and has version-detection
+# bugs against bcrypt >= 4.1 that wrongly reject normal passwords.
+bcrypt>=4.0.0
+PyJWT>=2.9.0
