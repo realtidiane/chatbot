@@ -1,5 +1,7 @@
 # Chatbot — FastAPI + React + OpenRouter (avec authentification)
 
+**Auteur :** Tidiane ([@realtidiane](https://github.com/realtidiane))
+
 Application web de chatbot multi-utilisateurs. Backend Python (FastAPI)
 qui parle à [OpenRouter](https://openrouter.ai/) en streaming, base de
 données MySQL pour les comptes et l'historique, frontend React + Vite +

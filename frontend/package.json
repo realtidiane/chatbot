@@ -2,6 +2,7 @@
   "name": "chatbot-frontend",
   "private": true,
   "version": "1.0.0",
+  "author": "Tidiane (@realtidiane)",
   "type": "module",
   "scripts": {
     "dev": "vite",
