@@ -6,10 +6,9 @@ backend/.env
 *.env
 
 # ============================================================
-# Claude Code local config (permissions, memory)
+# Local IDE / agent config
 # ============================================================
-.claude/settings.local.json
-.claude/memory/
+.claude/
 
 # ============================================================
 # Python
