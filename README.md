@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 SenChat
+# 🤖 Chatbot
 
 ### *Un chatbot multi-modèles, multi-utilisateurs, en streaming temps-réel*
 
@@ -39,7 +39,7 @@ via [OpenRouter](https://openrouter.ai). Comptes utilisateurs, historique persis
 
 ## ✨ À propos
 
-**SenChat** est une application web de chatbot **full-stack**, pensée pour donner accès à **plusieurs modèles d'IA** depuis une seule interface, sans avoir à jongler entre ChatGPT, Claude, Gemini, etc.
+**Chatbot** est une application web **full-stack** pensée pour donner accès à **plusieurs modèles d'IA** depuis une seule interface, sans avoir à jongler entre ChatGPT, Claude, Gemini, etc.
 
 Elle s'appuie sur **OpenRouter** comme passerelle universelle vers les LLMs, expose une API **FastAPI** asynchrone qui gère les comptes, l'historique et le **streaming SSE**, et offre un frontend **React** moderne avec rendu Markdown, coloration syntaxique et glassmorphism.
 
@@ -50,7 +50,7 @@ Elle s'appuie sur **OpenRouter** comme passerelle universelle vers les LLMs, exp
 ## 🚀 Fonctionnalités
 
 ### 🧠 Multi-modèles via OpenRouter
-- Sélection du modèle à la volée : **GPT-4o**, **Claude 3.5**, **Gemini 2.0**, **Llama 3.1**, **Mistral**, **DeepSeek**, et bien d'autres
+- Sélection du modèle à la volée : **GPT-4o**, **Claude 3.5**, **Gemini 2.0**, **Llama 3.1**, **Mistral**, **DeepSeek**…
 - Liste des modèles récupérée dynamiquement depuis l'API OpenRouter
 - Réglage du **system prompt** et de la **température** par conversation
 
@@ -72,7 +72,7 @@ Elle s'appuie sur **OpenRouter** comme passerelle universelle vers les LLMs, exp
 
 ### 🎨 Interface
 - Design **glassmorphism** moderne, **thème sombre/clair** persisté
-- Rendu **Markdown** complet : tableaux, listes, code blocks
+- Rendu **Markdown** complet : tableaux, listes, blocs de code
 - **Coloration syntaxique** via highlight.js
 - Composants accessibles (WCAG AA, `aria-labels`, `prefers-reduced-motion`)
 - **Responsive** : desktop, tablette, mobile
@@ -80,7 +80,7 @@ Elle s'appuie sur **OpenRouter** comme passerelle universelle vers les LLMs, exp
 ### 🛡️ Sécurité & robustesse
 - Mots de passe hashés avec **bcrypt**
 - **Rate limiting** (60 req/min/IP via slowapi)
-- Validation Pydantic sur toutes les entrées
+- Validation Pydantic stricte sur toutes les entrées
 - CORS configurable + **regex LAN** pour les usages réseau local
 - Gestion d'erreurs sans fuite d'information sensible
 
@@ -171,8 +171,8 @@ chatbot/
 ### 1️⃣ Cloner le repo
 
 ```bash
-git clone https://github.com/realtidiane/senchat.git
-cd senchat
+git clone https://github.com/realtidiane/chatbot.git
+cd chatbot
 ```
 
 ### 2️⃣ Créer la base de données
@@ -424,4 +424,4 @@ Distribué sous licence **MIT**. Libre de l'utiliser, le modifier et le redistri
 
 🇸🇳 *Built with care from Senegal.*
 
-Si SenChat t'a été utile, n'hésite pas à laisser une ⭐ sur le repo !
+Si ce projet t'a été utile, n'hésite pas à laisser une ⭐ sur le repo !
